@@ -1,7 +1,7 @@
 FROM node:alpine
 WORKDIR /usr/src/app
 COPY . .
-RUN npm install
-RUN npm ci
+RUN npm i -g pnpm tsx
+RUN pnpm install
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["npm", "bstart"]
