@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  web:
+    build:
+      context: https://github.com/rootknight/Nebula.git
+      dockerfile: Dockerfile
+    container_name: nebula
+    restart: always
+    ports:
+      - 8086:3000
